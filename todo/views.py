@@ -1,7 +1,9 @@
 from django.shortcuts import render
-
+from .forms import TextForm
+from .models import Todo
 # Create your views here.
 
 def index(request):
-    context={}
+    todo_list = Todo.objects.order_by('id')
+    context={'todo_list':todo_list}
     return render(request, 'todo/index.html', context)

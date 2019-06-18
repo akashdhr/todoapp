@@ -14,10 +14,10 @@
               </form>
             <div class='list-items transparent'>
                 <ul>
-                    <li>todo item 1 my name is akash dhar yo yo yo</li>
-                    <li>todo item 2</li>
                     <li>todo item 3</li>
-                    <li>todo item 4</li>
+                    {% for item in todo_list %}
+                        <li>{{ item.text }}</li>
+                    {% endfor %}
                 </ul>
             </div>
         </div>
