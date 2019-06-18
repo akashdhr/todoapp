@@ -1,0 +1,71 @@
+h2{
+    color: lightgrey;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    text-align: center;
+    padding:2% 30%;
+}
+
+.btn {
+    background-color: lightgrey; 
+    border: none;
+    border-radius: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 1000;   
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+input[type=text]{
+    /*width: 50%;*/
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid grey;
+    border-radius: 4px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+ul{
+    text-align: center;
+    align-items: center;
+    list-style-type: none;
+    background-color: lightgrey;
+    background:rgba(193, 154, 107, 0.3);
+}
+
+li{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2em;
+    /*font-weight: 200;*/
+}
+
+.app-window{
+    color:black;
+    text-align: center;
+    align-items: center;
+    padding:2% 30%;
+   /* margin-block: tight;*/
+}
+
+body {
+    /*background: url("images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    background: url(images/bg2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+}

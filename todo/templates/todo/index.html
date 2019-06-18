@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TODO List App</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'todo/style.css' %}"/>
+    </head>
+    <body>
+        <div class='app-window'>
+            <h2>TODO List</h2>
+            <form>
+                <input type="text" name="fname" placeholder="Enter your goals for today">
+                <a href="#"><input class="btn" type="submit" value="ADD"></a>
+              </form>
+            <div class='list-items transparent'>
+                <ul>
+                    <li>todo item 1 my name is akash dhar yo yo yo</li>
+                    <li>todo item 2</li>
+                    <li>todo item 3</li>
+                    <li>todo item 4</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
