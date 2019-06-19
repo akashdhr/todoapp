@@ -8,15 +8,19 @@
     <body>
         <div class='app-window'>
             <h2>TODO List</h2>
-            <form>
-                <input type="text" name="fname" placeholder="Enter your goals for today">
+            <form method="POST">
+                {% csrf_token %}
+                {{ todo_form.text }}
                 <a href="#"><input class="btn" type="submit" value="ADD"></a>
               </form>
-            <div class='list-items transparent'>
+            <div class='list-items'>
                 <ul>
-                    <li>todo item 3</li>
                     {% for item in todo_list %}
-                        <li>{{ item.text }}</li>
+                        {% if item.completed %}
+                            <li><del>{{ item.text }}</del></li>
+                        {% else %}
+                            <a style="text-decoration:none; color: black" href="{% url 'completeitem' item.id %}"><li class="not-completed">{{ item.text }}</li></a>
+                        {% endif %}
                     {% endfor %}
                 </ul>
             </div>

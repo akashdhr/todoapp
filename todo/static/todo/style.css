@@ -41,12 +41,13 @@ ul{
     align-items: center;
     list-style-type: none;
     background-color: lightgrey;
-    background:rgba(193, 154, 107, 0.3);
+    
 }
 
 li{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 2em;
+    background:rgba(193, 154, 107, 0.3);
     /*font-weight: 200;*/
 }
 
@@ -68,4 +69,7 @@ body {
     -o-background-size: cover;
     background-size: cover;
 
+}
+.not-completed {
+    background:rgba(193, 154, 107, 0.8);
 }
