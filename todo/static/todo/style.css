@@ -39,9 +39,7 @@ input[type=text]{
 ul{
     text-align: center;
     align-items: center;
-    list-style-type: none;
-    background-color: lightgrey;
-    
+    list-style-type: none;    
 }
 
 li{
@@ -69,7 +67,4 @@ body {
     -o-background-size: cover;
     background-size: cover;
 
-}
-.not-completed {
-    background:rgba(193, 154, 107, 0.8);
 }

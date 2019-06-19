@@ -8,11 +8,12 @@
     <body>
         <div class='app-window'>
             <h2>TODO List</h2>
-            <form method="POST">
+            <form method="POST" action="{% url 'addtodo' %}" role="form">
                 {% csrf_token %}
                 {{ todo_form.text }}
-                <a href="#"><input class="btn" type="submit" value="ADD"></a>
+                <button class="btn" type="submit">ADD</button>
               </form>
+              <a href="{% url 'delete' %}"><button class="btn" type="submit">DELETE</button></a><a href="{% url 'clearall' %}"> <button class="btn" type="submit">CLEAR ALL</button></a>
             <div class='list-items'>
                 <ul>
                     {% for item in todo_list %}
