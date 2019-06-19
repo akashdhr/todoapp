@@ -1,13 +1,5 @@
-h2{
-    color: lightgrey;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: black;
-    text-align: center;
-    padding:2% 30%;
-}
-
 .btn {
-    background-color: lightgrey; 
+    background-color: aliceblue; 
     border: none;
     border-radius: 12px;
     font-family: 'Courier New', Courier, monospace;
@@ -20,9 +12,17 @@ h2{
 }
 
 .btn:hover {
-    background-color: black;
+    background-color: lightcoral;
     color: white;
     cursor: pointer;
+}
+
+h2{
+    color: lightgrey;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    text-align: center;
+    padding:2% 30%;
 }
 
 input[type=text]{
@@ -66,5 +66,5 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
 }
+
